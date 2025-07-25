@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Integral-CF';
+  src: url('/fonts/Integral-CF.zip') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-img{
+    height: auto;
+    width: 40rem;
+}
+.new-gap{
+    gap: 10px;
+}
+.search-bar{
+    padding-right: 300px !important;
+}
+/* .main-background{
+    background-color: #F2F0F1;
+    padding: 60px;
+} */
+.brands-bar{
+    gap: 120px;
+}
+.versace {
+    font-size: 50px;
+}
+.zara {
+    font-size: 50px;
+}
+.gucci {
+    font-size: 50px;
+}
+.prada {
+    font-size: 50px;
+}
+.calvin-klein {
+    font-size: 50px;
+}
+.rating i {
+color: gold;
+}
