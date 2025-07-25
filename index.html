@@ -9,39 +9,64 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Linking Bootstrap CSS for grid, utility classes, and responsive design -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <!-- Linking Bootstrap Icons to use vector-based icons like cart, person, etc. -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Linking my custom stylesheet to override or extend Bootstrap styling -->
   </head>
   <body>
     <header
       class="bg-dark py-4 py-md-2 d-flex justify-content-center align-items-center"
     >
+      <!-- bg-dark gives a dark background to make header stand out -->
+      <!-- py-4 adds vertical padding; py-md-2 reduces it on medium+ screens for responsiveness -->
+      <!-- d-flex + justify-content-center + align-items-center centers the text horizontally and vertically -->S
       <div class="d-none d-md-flex">
+        <!-- Hides the element on small devices; shows only from md and up -->
         <p class="text-white m-0">
+          <!-- text-white makes text white for contrast on dark bg -->
+          <!-- m-0 removes margin to keep spacing tight -->
           Sign up and get 20% off on your first order.
           <a href="" class="text-white">Sign Up Now</a>
+          <!-- text-white keeps link same color as text -->
         </p>
       </div>
     </header>
     <section class="bg-white py-4">
+      <!-- bg-white gives section a clean white background -->
+      <!-- py-4 adds padding on top and bottom -->
+
       <div
         class="d-flex justify-content-center align-items-center d-none d-md-flex"
       >
+        <!-- Flexbox to center nav items horizontally and vertically -->
+        <!-- d-none d-md-flex hides nav on small screens -->
+
         <nav class="d-flex align-items-center gap-5 px-4">
+          <!-- d-flex + align-items-center aligns nav links vertically -->
+          <!-- gap-5 adds spacing between items -->
+          <!-- px-4 adds horizontal padding -->
           <div class="fw-bold fs-4">SHOP.CO</div>
+          <!-- fw-bold for bold brand name; fs-4 for larger font size -->
 
           <div class="d-flex align-items-center">
-            <a href="#" class="text-decoration-none text-dark"
-              >Shop <i class="bi bi-chevron-down"></i
+            <!-- Flex to align the link and dropdown icon -->
+            <a href="#" class="text-decoration-none text-dark"></a>
+              Shop <i class="bi bi-chevron-down"></i
             ></a>
+            <!-- text-decoration-none removes underline -->
+            <!-- text-dark ensures the text is black -->
           </div>
 
           <a href="#" class="text-decoration-none text-dark">On Sale</a>
           <a href="#" class="text-decoration-none text-dark">New Arrival</a>
           <a href="#" class="text-decoration-none text-dark">Brands</a>
+          
 
           <form class="d-flex" role="search">
             <input
@@ -49,10 +74,14 @@
               type="search"
               placeholder="Search for products..."
               aria-label="Search"
-            />
+            /><!-- form-control styles input nicely -->
+            <!-- rounded-pill gives it a pill shape -->
+            <!-- pe-5 adds right padding so text doesn't touch icon -->
+            <!-- bg-light makes it stand out on white background -->
           </form>
           <i class="bi bi-cart"></i>
           <i class="bi bi-person-circle"></i>
+          <!-- i class for icons -->
         </nav>
       </div>
     </section>
@@ -171,6 +200,7 @@
         class="d-flex mx-auto justify-content-center align-items-center text-decoration-none text-dark rounded-pill btn btn-outline-secondary"
         >View all</a
       >
+      <!-- btn btn-outline-secondary gives black ouline outside button -->
     </section>
     <hr />
     <section>
@@ -183,15 +213,18 @@
       <div
         class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5"
       >
+      <!-- flex-column and flex-md-row style for mobile view-->
         <div>
           <img src="./images/Frame 32 (1).png" alt="image" />
           <p class="m-0">T-shirt With Tape Details</p>
+          <!-- m-0 removes all margins -->
           <div class="rating">
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star"></i>
             <i class="bi bi-star-half"></i>
+            <!-- bootstrap code for icon -->
           </div>
           <p>$120</p>
         </div>
@@ -263,7 +296,8 @@
   <footer class="bg-dark py-4 mt-5">
     <div
       class="d-flex flex-column flex-md-row justify-content-center align-items-start mx-2 gap-5"
-    >
+    > 
+    <!-- flex-column and flex-md-row style for mobile view-->
       <div>
         <p class="fw-bold fs-4 text-white">SHOP.CO</p>
         <p class="text-white">
@@ -275,9 +309,11 @@
           <i class="bi bi-facebook" style="color: white"></i>
           <i class="bi bi-instagram" style="color: white"></i>
           <i class="bi bi-discord" style="color: white"></i>
+          <!-- bootstrap code for icon -->
         </div>
       </div>
       <div class="flex-column">
+        <!-- align texts in a straight line -->
         <p class="fw-semibold fs-3 text-white">Company</p>
         <p class="text-light">About</p>
         <p class="text-light">Features</p>
